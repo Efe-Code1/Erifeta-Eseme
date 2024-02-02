@@ -28,7 +28,6 @@ body {
 .section1{
     margin-top: -30px;
     color: azure;
-    /* font-weight: bold; */
     background-attachment: fixed;
     text-align: center;
 }
@@ -83,19 +82,11 @@ body {
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
-
-h1.section2Header{
-    text-align: center;
-    margin: 10px;
-    color: white;
-    text-shadow: 2px 2px black;
-}
-
 div.box{
     padding: 10px;
     text-align: center;
     margin: 20px;
-    background-color: aliceblue;
+    background-color: white;
     margin-right: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 16px rgba(0,0,0,0.9);
@@ -117,7 +108,6 @@ p{
     color: black;
 }
 
-
 .section1 .collectibles {
     color:deepskyblue;
     text-shadow: 2px 2px black;
@@ -132,7 +122,7 @@ p{
     background-image: linear-gradient(to bottom, white, transparent);
 }
 
-.name{
+.name {
     font-size: xx-large;
     font-weight: bold;
 }
@@ -141,17 +131,42 @@ p{
     font-size: 1.3rem;
 }
 
+.write-up2 {
+    width: 800px;
+    /* background-color: white; */
+    padding: 50px;
+}
+
+.write-up2 img{
+    width: 100%;
+}
+
+.write-up {
+    display: flex;
+    justify-content: center;
+}
+
+.flex{
+    gap: 50px;
+    text-align: justify;
+}
+
+p.para{
+    color: black;
+    line-height: 1.6rem;
+    font-size: 17px;
+    text-align: justify;
+}
 
 /* SECTION2 STYLING */
 .section2 {
-    background-color: lightblue;
+    background-color: #e0f1fc;
     margin-left: -10px;
     margin-right: -20px;
     padding-left: 10px;
     margin-top: 40px;
     position: relative;
 }
-
 
 .section2-body {
     display: flex;
@@ -207,7 +222,22 @@ p{
     .section1 p:last-of-type {
         font-size: larger;
     }
+
+    .write-up2 {
+        width: 400px;
+        padding: 30px;
+    }
     
+    .write-up {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .flex{
+        flex-direction: column;
+        text-align: justify;
+        gap: 50px;
+    }
 
     .col-6,
     .col-4,
@@ -235,57 +265,9 @@ p{
     }
 
     p.para{
-        color: white;
+        color: black;
         line-height: 1.6rem;
         font-size: 17px;
         text-align: justify;
-    }
-
-    .section2Header,
-    .section3Header {
-        /* overflow: hidden; */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .section-img-container {
-        margin-top: 30px;
-        width: 180px;
-        color: black;
-    }
-
-    .section-img-container:hover {
-        position: relative;
-        bottom: 5px;
-    }
-
-    .section2{
-        margin-left: -10px;
-        margin-right: -20px;
-    }
-
-    .section2-body h2 {
-        font-size: x-large;
-    }
-
-    .section2-body p {
-        font-size: larger;
-    }
-
-    .section2-body {
-        flex-direction: column;
-    }
-
-    .section2-body a {
-        text-align: center;
-    }
-
-    .section4Header {
-        color: black;
-    }
-
-    .section4creators {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 }
