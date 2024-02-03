@@ -20,12 +20,12 @@ body {
     font-size: smaller;
 }
 
-.welcome{
-    margin-top: 90px;  
-    margin-left: 20px;  
+.welcome {
+    margin-top: 90px;
+    margin-left: 20px;
 }
 
-.section1{
+.section1 {
     margin-top: -30px;
     color: azure;
     background-attachment: fixed;
@@ -33,11 +33,11 @@ body {
 }
 
 /* SECTION1 STYLING */
-.span a{
+.span a {
     margin-top: 0px;
     color: black;
     font-weight: bold;
-    background-color:deepskyblue;
+    background-color: deepskyblue;
     padding: 6px 40px;
     border-radius: 20px;
     text-decoration: none;
@@ -49,67 +49,102 @@ body {
 }
 
 
-.container{
-    width:100%;
-    margin:auto;
+.container {
+    width: 100%;
+    margin: auto;
     padding-top: 10%;
     padding-bottom: 10%;
 }
 
-.row{
-    width:100%;
-    display:flex;
+.row {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.row::after{
+.row::after {
     display: table;
     clear: both;
     content: "";
 }
 
-.col-1{width: 8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 25;}
-.col-4{width: 33.33%;}
-.col-5{width: 41.66%;}
-.col-6{width: 50%;}
-.col-7{width: 58.33%;}
-.col-8{width: 66.66%;}
-.col-9{width: 75%;}
-.col-10{width: 83.33%;}
-.col-11{width: 91.66%;}
-.col-12{width: 100%;}
-
-div.box{
-    padding: 10px;
-    text-align: center;
-    margin: 20px;
-    background-color: white;
-    margin-right: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 16px rgba(0,0,0,0.9);
+.col-1 {
+    width: 8.33%;
 }
 
-div.icon{
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
     width: 100%;
 }
 
-label{
+div.box {
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    background-color: mintcream;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+div.icon {
+    width: 100%;
+}
+
+label {
     font-size: larger;
     color: black;
     font-weight: bold;
 }
 
-p{
+p {
     font-size: medium;
     line-height: 1.2;
     color: black;
 }
 
 .section1 .collectibles {
-    color:deepskyblue;
+    color: deepskyblue;
     text-shadow: 2px 2px black;
     font-weight: bold;
     padding: 30px 36px;
@@ -117,7 +152,7 @@ p{
     font-size: 1.9rem;
 }
 
-.navbar-expand-md{
+.navbar-expand-md {
     background-color: deepskyblue;
     background-image: linear-gradient(to bottom, white, transparent);
 }
@@ -137,8 +172,12 @@ p{
     padding: 50px;
 }
 
-.write-up2 img{
+.write-up2 img {
     width: 100%;
+}
+
+.write-up2 p {
+    line-height: 25px;
 }
 
 .write-up {
@@ -146,12 +185,21 @@ p{
     justify-content: center;
 }
 
-.flex{
+.flex {
     gap: 50px;
     text-align: justify;
 }
 
-p.para{
+.myResume a{
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p.para {
     color: black;
     line-height: 1.6rem;
     font-size: 17px;
@@ -161,30 +209,15 @@ p.para{
 /* SECTION2 STYLING */
 .section2 {
     background-color: #e0f1fc;
-    margin-left: -10px;
-    margin-right: -20px;
-    padding-left: 10px;
     margin-top: 40px;
-    position: relative;
 }
 
-.section2-body {
-    display: flex;
-    justify-content: space-between;
+.section3 {
+    background-color: aliceblue;
+    /* position: relative; */
 }
 
-.section2 a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    border: 2px solid black;
-    border-radius: 2px 50px;
-    background-color: #1b1bff;
-    padding: 10px 46px 10px 46px;
-}
-
-#pop-up{
+#pop-up {
     animation: drop 2s ease forwards;
 }
 
@@ -192,11 +225,22 @@ p.para{
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     color: transparent;
     background-clip: text;
-  }
+}
 
-@keyframes drop{
-    from{transform: translateY(-300px);}
-    to{ transform: translateY(50px);}
+.smiley {
+    background-color: gold;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+@keyframes drop {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(50px);
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -214,9 +258,9 @@ p.para{
         gap: 10px;
     }
 
-    .welcome{
-        margin-top: 20px;  
-        margin-left: 20px;  
+    .welcome {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     .section1 p:last-of-type {
@@ -224,16 +268,22 @@ p.para{
     }
 
     .write-up2 {
-        width: 400px;
-        padding: 30px;
+        width: 430px;
+        padding: 10px;
     }
-    
+
     .write-up {
         display: flex;
         justify-content: center;
     }
-    
-    .flex{
+
+
+    .write-up2 img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .flex {
         flex-direction: column;
         text-align: justify;
         gap: 50px;
@@ -242,29 +292,29 @@ p.para{
     .col-6,
     .col-4,
     .col-5,
-    .col-7{
-        width:100%;
-        margin:10px;
+    .col-7 {
+        width: 100%;
+        margin: 10px;
     }
- 
-    .col-3{
+
+    .col-3 {
         width: 50%;
         text-align: center;
     }
 
-    article p{
+    article p {
         color: black;
         font-size: 15px;
         padding: 3px;
     }
 
-    article h1{
+    article h1 {
         color: white;
         font-size: 20px;
         padding: 3px;
     }
 
-    p.para{
+    p.para {
         color: black;
         line-height: 1.6rem;
         font-size: 17px;
