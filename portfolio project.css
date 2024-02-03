@@ -109,6 +109,12 @@ p {
     color: black;
 }
 
+.box p{
+    text-align: center;
+    padding: 15px;
+    line-height: 25px;
+}
+
 .section1 .collectibles {
     color: deepskyblue;
     text-shadow: 2px 2px black;
