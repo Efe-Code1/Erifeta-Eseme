@@ -175,6 +175,12 @@ p {
     zoom:100%
 }
 
+.achievements{
+    display: flex;
+    justify-content: space-evenly; 
+    font-size: larger;
+}
+
 p.para {
     color: black;
     line-height: 1.6rem;
@@ -272,6 +278,11 @@ p.para {
         zoom: 150%;
     }
 
+    .achievements{
+    display: block;
+    text-align: center;
+    font-size: larger;
+}
 
     .write-up2 img {
         width: 100%;
