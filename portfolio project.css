@@ -156,6 +156,11 @@ p {
     text-align: justify;
 }
 
+
+.myResume{
+    text-align: center;
+}
+
 .myResume a{
     text-decoration: none;
     border: 2px solid deepskyblue;
@@ -186,6 +191,21 @@ p.para {
 .section3 {
     background-color: aliceblue;
     /* position: relative; */
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.skills img{
+    cursor: pointer;
+    width: 150px;
+}
+
+.skills img:hover{
+    zoom: 95%;
 }
 
 #pop-up {
@@ -243,9 +263,13 @@ p.para {
         justify-content: center;
     }
 
-    .skills{
+    .skillsets{
         margin-left: 20px;
         margin-bottom: 30px;
+    }
+
+    .skills img:hover{
+        zoom: 150%;
     }
 
 
