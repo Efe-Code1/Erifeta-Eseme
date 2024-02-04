@@ -256,8 +256,10 @@ p {
     text-decoration: none;
     background-color: deepskyblue;
     color: black;
+    font-size: small;
     font-weight: bold;
     padding: 10px;
+    zoom:90%;
     border-radius: 10px;
 }
 
@@ -356,7 +358,7 @@ p {
     }
 
     .img-text-wrapper{
-        padding-left: 100px;
+        margin-left: -90px;
     }
 
     .portfolio-img-background{
