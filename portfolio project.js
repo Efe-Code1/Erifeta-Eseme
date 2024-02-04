@@ -1,3 +1,21 @@
+const pfts = document.querySelectorAll(".portfolio-item-wrapper")
+
+pfts.forEach(pft => {
+    pft.addEventListener("mouseover", () => {
+        // console.log(pft.childNodes[1].classList);
+        pft.childNodes[1].classList.add("img-fade");
+    })
+})
+
+pfts.forEach(pft => {
+    pft.addEventListener("mouseout", () => {
+        // console.log(pft.childNodes[1].classList);
+        pft.childNodes[1].classList.remove("img-fade");
+    })
+})
+
+
+
 let h1 = document.getElementsByTagName('h1')[0]
 let str = 'A Certified Geophysicist'
 let len = str.length

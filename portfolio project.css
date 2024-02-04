@@ -7,7 +7,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(Just\ Me.jpg);
+    background-image: url(images/Just\ Me.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -212,6 +212,12 @@ p {
     padding-bottom: 100px;
 }
 
+.section5{
+    background-color: aliceblue;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
 
 .skills {
     display: grid;
@@ -223,6 +229,46 @@ p {
 .skills img{
     cursor: pointer;
     width: 100px;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height:300px;
+    width: 100%;
+    background-size: 100%;
+   }
+
+.img-text-wrapper{
+    position: absolute;
+    top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 200px;
+}
+
+.img-text-wrapper:hover .subtitle a{
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img-text-wrapper .subtitle a{
+    color:transparent;
+    
+}
+
+.img-fade{
+    transition: 1s;
+    filter:brightness(10%);
 }
 
 .skills img:hover{
@@ -307,6 +353,16 @@ p {
         flex-direction: column;
         margin-left: 20px;
         gap: 50px;
+    }
+
+    .img-text-wrapper{
+        padding-left: 100px;
+    }
+
+    .portfolio-img-background{
+        height:200px;
+        width: 100%;
+        background-size: 100%;
     }
 
     .write-up2 img {
