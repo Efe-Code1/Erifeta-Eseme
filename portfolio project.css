@@ -86,6 +86,7 @@ div.box {
     padding: 10px;
     text-align: center;
     margin: 20px;
+    border: 1px solid lightblue;
     background-color: white;
     margin-right: 10px;
     border-radius: 10px;
@@ -153,6 +154,7 @@ p {
 }
 
 .write-up {
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -273,6 +275,38 @@ p {
     filter:brightness(10%);
 }
 
+.parent {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 300px;
+    z-index: -1;
+    background-color: #e0f1fc;
+    overflow: visible;
+    /* perspective: 100px; */
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child:nth-child(1) {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    transform: translateZ(100px);
+}
+
+.child:nth-child(2) {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-color: lightblue;
+    transform: translateZ(-100px);
+}
+
 .skills img:hover{
     zoom: 95%;
 }
@@ -332,6 +366,10 @@ p {
         justify-content: center;
     }
 
+    .achievements div{
+        font-size: 17px ;
+    }
+
     .skills {
         margin: 0;
     }
@@ -362,9 +400,9 @@ p {
     }
 
     .portfolio-img-background{
-        height:200px;
-        width: 100%;
-        background-size: 100%;
+        height:190px;
+        width: 98%;
+        background-size: contain;
     }
 
     .write-up2 img {
@@ -376,6 +414,10 @@ p {
         flex-direction: column;
         text-align: justify;
         gap: 50px;
+    }
+
+    .parent{
+        margin-left: 150px;
     }
 
     .col-6,

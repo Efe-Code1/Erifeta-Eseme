@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body * {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            /* perspective: 100px; */
+            transform-style: preserve-3d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child:nth-child(1) {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: translateZ(100px);
+        }
+
+        .child:nth-child(2) {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transform: translateZ(-100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+    <script>
+        let par = document.getElementsByTagName('div')[0]
+        let pos = 0
+
+        setInterval(() => {
+            par.style.transform = `rotateY(${pos}deg)`
+            pos += 1
+        }, 16.67)
+    </script>
+</body>
+
+</html>

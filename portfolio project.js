@@ -14,7 +14,13 @@ pfts.forEach(pft => {
     })
 })
 
+let par = document.querySelector('.parent')
+let pos = 0
 
+setInterval(() => {
+    par.style.transform = `rotateY(${pos}deg)`
+    pos += 1
+}, 16.67)
 
 let h1 = document.getElementsByTagName('h1')[0]
 let str = 'A Certified Geophysicist'

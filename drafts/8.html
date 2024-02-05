@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <div>
+    <div>
+      
+    </div>
+  </div>
+  <style>
+  html * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body>div {
+    border: 2px solid red;
+    perspective: 10px;
+  }
+  div>div{
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transform: translateZ(0px) rotateY(0deg);
+  }
+  </style>
+
+<script>
+let div1 = document.getElementsByTagName('div')[1]
+let transZ = 0
+
+setInterval(() => {
+  div1.style.transform = `translateZ(${transZ}px)`
+  transZ -= 0.5
+}, 16.67)
+</script>
+</body>
+</html>
