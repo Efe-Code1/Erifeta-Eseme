@@ -315,6 +315,10 @@ p {
     animation: drop 2s ease forwards;
 }
 
+.form-control{
+    padding: 10px;
+}
+
 .rainbow {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     color: transparent;
@@ -408,6 +412,14 @@ p {
     .write-up2 img {
         width: 100%;
         padding: 10px;
+    }
+
+    .contact{
+        margin: 0 auto;;
+    }
+
+    .lead{
+        font-size: large;
     }
 
     .flex {
