@@ -414,6 +414,10 @@ p {
         padding: 10px;
     }
 
+    .form-label{
+        font-size: medium;
+    }
+
     .contact{
         margin: 0 auto;;
     }
