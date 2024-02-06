@@ -239,7 +239,7 @@ p {
 .portfolio-img-background{
     height:300px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
    }
 
 .img-text-wrapper{
@@ -254,19 +254,26 @@ p {
 }
 
 .img-text-wrapper:hover .subtitle a{
-    text-decoration: none;
-    background-color: deepskyblue;
-    color: black;
+    text-decoration: underline;
+    color: white;
     font-size: small;
     font-weight: bold;
-    padding: 10px;
     zoom:90%;
     border-radius: 10px;
 }
 
+.img-text-wrapper:hover .subtitle a .internet{
+    color: dodgerblue;
+    font-size: x-large;
+    zoom:90%;
+}
+
 .img-text-wrapper .subtitle a{
     color:transparent;
-    
+}
+
+.img-text-wrapper .subtitle a .internet{
+    color:transparent;
 }
 
 .img-fade{
@@ -282,7 +289,6 @@ p {
     z-index: -1;
     background-color: #e0f1fc;
     overflow: visible;
-    /* perspective: 100px; */
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
