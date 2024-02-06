@@ -141,7 +141,6 @@ p {
 
 .write-up2 {
     width: 800px;
-    /* background-color: white; */
     padding: 50px;
 }
 
@@ -315,6 +314,10 @@ p {
     animation: drop 2s ease forwards;
 }
 
+.contact{
+    justify-content: center;
+}
+
 .form-control{
     padding: 10px;
 }
@@ -404,9 +407,9 @@ p {
     }
 
     .portfolio-img-background{
-        height:190px;
-        width: 98%;
-        background-size: contain;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
     }
 
     .write-up2 img {
@@ -419,7 +422,7 @@ p {
     }
 
     .contact{
-        margin: 0 auto;;
+        margin: 0 auto;
     }
 
     .lead{
@@ -433,7 +436,7 @@ p {
     }
 
     .parent{
-        margin-left: 150px;
+        margin-left: 130px;
     }
 
     .col-6,
