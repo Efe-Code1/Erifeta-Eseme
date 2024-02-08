@@ -395,6 +395,14 @@ p {
         padding: 10px;
     }
 
+    .write-up2 p{
+        font-size: 14px;
+    }
+
+    .box p{
+        font-size: 14px;
+    }
+
     .write-up {
         display: flex;
         justify-content: center;
