@@ -216,7 +216,7 @@ p {
 .section5{
     background-color: aliceblue;
     margin-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 
@@ -325,6 +325,26 @@ p {
     padding: 10px;
 }
 
+.touch{
+    font-size: larger;
+}
+
+.reach{
+    font-size: larger;
+}
+
+
+.socials a:hover{
+    box-shadow:  2px 2px 4px dodgerblue,
+                -2px -2px 4px dodgerblue;
+    zoom: 100%;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .rainbow {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     color: transparent;
@@ -416,7 +436,7 @@ p {
     .img-text-wrapper:hover .subtitle a{
         text-decoration: underline;
         color: white;
-        font-size: large;
+        font-size: medium;
         font-weight: bold;
         zoom:90%;
     }
@@ -467,15 +487,11 @@ p {
         text-align: center;
     }
 
-    article p {
-        color: black;
-        font-size: 15px;
-        padding: 3px;
+    .touch{
+        font-size: medium;
     }
-
-    article h1 {
-        color: white;
-        font-size: 20px;
-        padding: 3px;
+    
+    .reach{
+        font-size: medium;
     }
 }
