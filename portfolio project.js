@@ -22,17 +22,17 @@ setInterval(() => {
     pos += 1
 }, 16.67)
 
-let h1 = document.getElementsByTagName('h1')[0]
+let h4 = document.getElementsByTagName('h4')[0]
 let str = 'A Certified Geophysicist'
 let len = str.length
 let index = 0
 
-let h1b = document.getElementsByTagName('h1')[1]
+let h4b = document.getElementsByTagName('h4')[1]
 let str2 = 'Tech Savvy &'
 let len2 = str2.length
 let index2 = 0
 
-let h1c = document.getElementsByTagName('h1')[2]
+let h4c = document.getElementsByTagName('h4')[2]
 let str3 = 'A Proficient Web Developer'
 let len3 = str3.length
 let index3 = 0
@@ -44,12 +44,12 @@ setTimeout(() => {
         if (index >= len) {
             clearInterval(handle)
             startB()
-            let strB = h1.innerHTML.replace('<span>|</span>', '')
-            h1.innerHTML = strB
+            let strB = h4.innerHTML.replace('<span>|</span>', '')
+            h4.innerHTML = strB
         } else {
-            let strB = h1.innerHTML.replace('<span>|</span>', '')
-            h1.innerHTML = strB
-            h1.innerHTML += str[index] + '<span>|</span>'
+            let strB = h4.innerHTML.replace('<span>|</span>', '')
+            h4.innerHTML = strB
+            h4.innerHTML += str[index] + '<span>|</span>'
             index += 1
         }
     }, PERIODA)
@@ -60,12 +60,12 @@ function startB() {
         if (index2 >= len2) {
             clearInterval(handleB)
             startC()
-            let strB = h1b.innerHTML.replace(/<span>\|<\/span>/g, '')
-            h1b.innerHTML = strB
+            let strB = h4b.innerHTML.replace(/<span>\|<\/span>/g, '')
+            h4b.innerHTML = strB
         } else {
-            let strB = h1b.innerHTML.replace('<span>|</span>', '')
-            h1b.innerHTML = strB
-            h1b.innerHTML += str2[index2] + '<span>|</span>'
+            let strB = h4b.innerHTML.replace('<span>|</span>', '')
+            h4b.innerHTML = strB
+            h4b.innerHTML += str2[index2] + '<span>|</span>'
             index2 += 1
         }
     }, PERIODA)
@@ -77,9 +77,9 @@ function startC() {
             clearInterval(handleC)
             startD()
         } else {
-            let strB = h1c.innerHTML.replace('<span>|</span>', '')
-            h1c.innerHTML = strB
-            h1c.innerHTML += str3[index3] + '<span>|</span>'
+            let strB = h4c.innerHTML.replace('<span>|</span>', '')
+            h4c.innerHTML = strB
+            h4c.innerHTML += str3[index3] + '<span>|</span>'
             index3 += 1
         }
     }, PERIODA)

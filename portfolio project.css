@@ -256,16 +256,14 @@ p {
 .img-text-wrapper:hover .subtitle a{
     text-decoration: underline;
     color: white;
-    font-size: small;
+    font-size: larger;
     font-weight: bold;
     zoom:90%;
-    border-radius: 10px;
 }
 
 .img-text-wrapper:hover .subtitle a .internet{
     color: dodgerblue;
     font-size: x-large;
-    zoom:90%;
 }
 
 .img-text-wrapper .subtitle a{
@@ -277,7 +275,6 @@ p {
 }
 
 .img-fade{
-    transition: 1s;
     filter:brightness(10%);
 }
 
@@ -365,6 +362,10 @@ p {
         margin-left: 20px;
     }
 
+    .large{
+        font-size: larger;
+    }
+
     .section1 p:last-of-type {
         font-size: larger;
     }
@@ -410,6 +411,14 @@ p {
 
     .img-text-wrapper{
         margin-left: -110px;
+    }
+
+    .img-text-wrapper:hover .subtitle a{
+        text-decoration: underline;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+        zoom:90%;
     }
 
     .portfolio-img-background{
