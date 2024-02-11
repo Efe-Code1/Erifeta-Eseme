@@ -476,6 +476,12 @@ p {
         background-position: center;
     }
 
+    .todo{
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+    }
+
     .write-up2 img {
         width: 100%;
         padding: 10px;
