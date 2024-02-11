@@ -237,6 +237,7 @@ p {
 }
 
 .portfolio-img-background{
+    border: 1px solid black;
     height:300px;
     width: 100%;
     background-size: cover;
@@ -254,9 +255,12 @@ p {
 }
 
 .img-text-wrapper:hover .subtitle a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: underline;
     color: white;
-    font-size: larger;
+    font-size: medium;
     font-weight: bold;
     zoom:90%;
 }
@@ -343,6 +347,23 @@ p {
 .socials{
     display: flex;
     justify-content: space-evenly;
+}
+
+.submit{
+    width: 100%; 
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid deepskyblue;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.submit:hover{
+    background-color: deepskyblue;
+    zoom:100%
 }
 
 .rainbow {
@@ -438,7 +459,7 @@ p {
     }
 
     .img-text-wrapper{
-        margin-left: -110px;
+        margin-left: -100px;
     }
 
     .img-text-wrapper:hover .subtitle a{
