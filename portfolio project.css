@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
-html {
-    --buttoncolor: blue;
-    --background: lightblue;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-image: url(images/Just\ Me.jpg);
@@ -13,18 +8,17 @@ body {
     background-position: top;
     background-attachment: fixed;
     color: black;
-    /* width: fit-content; */
 }
 
-.description {
-    color: azure;
-    font-size: smaller;
+
+
+
+/* HOME HEADING || SECTION 1*/
+.navbar-expand-md {
+    background-color: deepskyblue;
+    background-image: linear-gradient(to bottom, white, transparent);
 }
 
-.welcome {
-    margin-top: 90px;
-    margin-left: 20px;
-}
 
 .section1 {
     margin-top: -30px;
@@ -33,7 +27,51 @@ body {
     text-align: center;
 }
 
-/* SECTION1 STYLING */
+
+.section1 a:hover,
+.section2 a:hover {
+    zoom: 110%;
+}
+
+
+.section1 .collectibles {
+    color: deepskyblue;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    padding: 30px 36px;
+    text-decoration: none;
+    font-size: 1.9rem;
+}
+
+
+.section1 p {
+    font-size: 1.3rem;
+}
+
+.welcome {
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 45px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.description {
+    color: azure;
+    font-size: smaller;
+}
+
+#pop-up {
+    animation: drop 2s ease forwards;
+}
+
+@keyframes drop {
+    from {transform: translateY(-300px);}
+    to {transform: translateY(50px);}
+}
+
 .span a {
     margin-top: 0px;
     color: black;
@@ -44,9 +82,130 @@ body {
     text-decoration: none;
 }
 
-.section1 a:hover,
-.section2 a:hover {
-    zoom: 110%;
+
+
+
+
+/* ABOUT PAGE || SECTION 2 */
+.section2 {
+    background-color: #e0f1fc;
+    margin-top: 40px;
+}
+
+.parent {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 300px;
+    z-index: -1;
+    background-color: #e0f1fc;
+    /* overflow: visible; */
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child:nth-child(1) {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    transform: translateZ(100px);
+}
+
+.child:nth-child(2) {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    background-color: lightblue;
+    transform: translateZ(-100px);
+}
+
+.write-up {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.write-up2 {
+    width: 800px;
+    padding: 50px;
+}
+
+.write-up2 img {
+    width: 100%;
+}
+
+.write-up2 p {
+    line-height: 25px;
+}
+
+.flex {
+    gap: 50px;
+    text-align: justify;
+}
+
+
+.myResume{
+    text-align: center;
+    padding: 20px;
+}
+
+.myResume a{
+    text-decoration: none;
+    border: 2px solid deepskyblue;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.myResume a:hover{
+    background-color: deepskyblue;
+    zoom:100%
+}
+
+.achievements{
+    display: flex;
+    justify-content: space-evenly; 
+    font-size: larger;
+}
+
+
+.skills {
+    display: grid;
+    margin-left: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.skills img{
+    cursor: pointer;
+    width: 100px;
+}
+
+.skills img:hover{
+    zoom: 95%;
+}
+
+.smiley {
+    background-color: gold;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* SERVICES PAGE || SECTION3 */
+.section3 {
+    background-color: aliceblue;
+    padding-bottom: 100px;
 }
 
 
@@ -99,6 +258,13 @@ div.icon {
     width: 100%;
 }
 
+.box p{
+    text-align: center;
+    padding: 15px;
+    line-height: 25px;
+}
+
+
 label {
     font-size: larger;
     color: black;
@@ -111,126 +277,20 @@ p {
     color: black;
 }
 
-.box p{
-    text-align: center;
-    padding: 15px;
-    line-height: 25px;
-}
-
-.section1 .collectibles {
-    color: deepskyblue;
-    text-shadow: 2px 2px black;
-    font-weight: bold;
-    padding: 30px 36px;
-    text-decoration: none;
-    font-size: 1.9rem;
-}
-
-.navbar-expand-md {
-    background-color: deepskyblue;
-    background-image: linear-gradient(to bottom, white, transparent);
-}
-
-.name {
-    font-size: 45px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.section1 p {
-    font-size: 1.3rem;
-}
-
-.write-up2 {
-    width: 800px;
-    padding: 50px;
-}
-
-.write-up2 img {
-    width: 100%;
-}
-
-.write-up2 p {
-    line-height: 25px;
-}
-
-.write-up {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.flex {
-    gap: 50px;
-    text-align: justify;
+.rainbow {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color: transparent;
+    background-clip: text;
 }
 
 
-.myResume{
-    text-align: center;
-}
 
-.myResume a{
-    text-decoration: none;
-    border: 2px solid deepskyblue;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 10px;
-}
 
-.myResume a:hover{
-    background-color: deepskyblue;
-    zoom:100%
-}
-
-.achievements{
-    display: flex;
-    justify-content: space-evenly; 
-    font-size: larger;
-}
-
-.project-work{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 50px;
-    gap: 30px;
-    width: 90%;
-}
-
-/* SECTION2 STYLING */
-.section2 {
-    background-color: #e0f1fc;
-    margin-top: 40px;
-}
-
-.section3 {
-    background-color: aliceblue;
-    padding-bottom: 100px;
-}
-
+/* PROJECT PAGE || SECTION 4   */
 .section4{
     background-color: aliceblue;
     margin-top: 80px;
     padding-bottom: 100px;
-}
-
-.section5{
-    background-color: aliceblue;
-    margin-top: 80px;
-    padding-bottom: 30px;
-}
-
-
-.skills {
-    display: grid;
-    margin-left: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.skills img{
-    cursor: pointer;
-    width: 100px;
 }
 
 .portfolio-item-wrapper{
@@ -256,10 +316,8 @@ p {
 }
 
 .img-text-wrapper:hover .subtitle a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: underline;
+    text-align: center;
     color: white;
     font-size: medium;
     font-weight: bold;
@@ -283,43 +341,24 @@ p {
     filter:brightness(10%);
 }
 
-.parent {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-left: 300px;
-    z-index: -1;
-    background-color: #e0f1fc;
-    overflow: visible;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.project-work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    gap: 30px;
+    width: 90%;
 }
 
-.child:nth-child(1) {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: lightblue;
-    transform: translateZ(100px);
-}
 
-.child:nth-child(2) {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    z-index: 1;
-    background-color: lightblue;
-    transform: translateZ(-100px);
-}
 
-.skills img:hover{
-    zoom: 95%;
-}
 
-#pop-up {
-    animation: drop 2s ease forwards;
+
+
+/* CONTACT PAGE || SECTION 5 */
+.section5{
+    background-color: aliceblue;
+    margin-top: 80px;
+    padding-bottom: 30px;
 }
 
 .contact{
@@ -334,21 +373,6 @@ p {
     font-size: larger;
 }
 
-.reach{
-    font-size: larger;
-}
-
-
-.socials a:hover{
-    box-shadow:  2px 2px 4px dodgerblue,
-                -2px -2px 4px dodgerblue;
-    zoom: 100%;
-}
-
-.socials{
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .submit{
     width: 100%; 
@@ -367,24 +391,46 @@ p {
     zoom:100%
 }
 
-.rainbow {
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    color: transparent;
-    background-clip: text;
+
+/* SOCIAL MEDIA */
+.Socials{
+    border-top: 2px solid #808080;
+    background-color: azure;
+    color: black;
+    padding-top: 30px;
 }
 
-.smiley {
-    background-color: gold;
-    border-radius: 50%;
-    font-size: 20px;
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-decoration: none;
+    background-color: dodgerblue;
+    background-image: linear-gradient(to bottom, white, transparent);
+    border-radius: 10px;
 }
 
-@keyframes drop {
-    from {transform: translateY(-300px);}
-    to {transform: translateY(50px);}
+.socials a:hover{
+    box-shadow:  2px 2px 4px dodgerblue,
+                -2px -2px 4px dodgerblue;
+    zoom: 100%;
 }
 
-@media screen and (max-width:800px) {
+.reach{
+    font-size: larger;
+    color: black;
+}
+
+.locationEmail{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width:1000px) {
     @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
     body {
@@ -393,6 +439,8 @@ p {
         color: black;
     }
 
+
+    /* HOME HEADING || SECTION 1*/
     .section1 {
         margin-top: 10px;
         flex-direction: column;
@@ -417,6 +465,15 @@ p {
         font-size: larger;
     }
 
+
+
+
+    /* ABOUT PAGE || SECTION 2 */
+    .write-up {
+        display: flex;
+        justify-content: center;
+    }
+
     .write-up2 {
         width: 430px;
         padding: 10px;
@@ -426,15 +483,16 @@ p {
         font-size: 14px;
     }
 
-    .box p{
-        font-size: 14px;
+    .write-up2 img {
+        width: 100%;
+        padding: 10px;
     }
-
-    .write-up {
-        display: flex;
-        justify-content: center;
+    
+    .achievements{
+        display: inline-block;
+        font-size: larger;
     }
-
+    
     .achievements div{
         font-size: 17px ;
     }
@@ -452,11 +510,41 @@ p {
         zoom: 150%;
     }
 
-    .achievements{
-        display: inline-block;
-        font-size: larger;
+    
+    .flex {
+        flex-direction: column;
+        text-align: justify;
+        gap: 50px;
     }
 
+    .parent{
+        margin-left: 130px;
+    }
+
+
+
+
+    /* SERVICES PAGE || SECTION3 */
+    .col-6,
+    .col-4,
+    .col-5,
+    .col-7 {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .col-3 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .box p{
+        font-size: 14px;
+    }
+
+
+
+    /* PROJECT PAGE || SECTION 4   */ 
     .project-work{
         display: flex;
         flex-direction: column;
@@ -488,11 +576,10 @@ p {
         background-position: center;
     }
 
-    .write-up2 img {
-        width: 100%;
-        padding: 10px;
-    }
 
+
+
+    /* CONTACT PAGE || SECTION 5 */ 
     .form-label{
         font-size: medium;
     }
@@ -501,38 +588,19 @@ p {
         margin: 0 auto;
     }
 
-    .lead{
-        font-size: large;
-    }
-
-    .flex {
-        flex-direction: column;
-        text-align: justify;
-        gap: 50px;
-    }
-
-    .parent{
-        margin-left: 130px;
-    }
-
-    .col-6,
-    .col-4,
-    .col-5,
-    .col-7 {
-        width: 100%;
-        margin: 10px;
-    }
-
-    .col-3 {
-        width: 50%;
-        text-align: center;
-    }
-
     .touch{
         font-size: medium;
     }
     
     .reach{
         font-size: medium;
+    }
+
+
+    /* SOCIALS */
+    .locationEmail{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
