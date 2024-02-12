@@ -91,8 +91,6 @@
                             My expertise majorly lies in Front-end technologies such as HTML, CSS, BootStrap & JS
                             which enables me in creating and crafting designs into seamless, visually captivating
                             and responsive websites with intregrated functionality, interactivity and dynamism.
-                            <!-- I have an accomplishment history and a proven knowledge in some basic programming languages 
-                                as well, with relatively 2years of experience in the field. -->
                         </p>
                         <p>
                             I'm passionate on staying current with emerging tech trends,
@@ -223,6 +221,7 @@
                     <h3 class="fw-bold text-dark text-center py-4"> MY PROJECTS <h3>
                 </header>
             </article>
+            <br>
             <div class="project-work portfolio-items-wrapper">
                 <div class="portfolio-item-wrapper" data-aos="zoom-in-up">
                     <div class="portfolio-img-background" style="background-image: url(images/Shoe\ shopping\ website.png);
@@ -329,13 +328,16 @@
 
                 <div class="row justify-content-center align-items-center contact" data-aos="flip-right" data-aos-duration="2500">
                     <div class="col-lg-6 ">
-                        <form action=""> 
+
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="ba723ecf-f014-46c7-96c2-b19d73d1787b">
+                            
                             <label for="name" class="form-label">Name:</label>
                             <div class="mb-4 input-group">
                                 <span class="input-group-text">
                                     <i class="bi bi-person-fill"></i>
                                 </span>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" name="Name" class="form-control" id="name" required>
                             </div>
 
 
@@ -344,14 +346,14 @@
                                 <span class="input-group-text">
                                     <i class="bi bi-envelope-fill"></i>
                                 </span>
-                                <input type="email" class="form-control" id="email">
+                                <input type="email" name="Email" class="form-control" id="email" required>
                             </div>
 
 
                             <label for="subject" class="form-label">Message:</label>
                             <div class="mb-4 input-group">
                                 <div class="form-floating ">
-                                    <textarea id="subject" class="form-control" style="height: 200px;"></textarea>
+                                    <textarea id="subject" name="Message" class="form-control" style="height: 200px;" required></textarea>
                                 </div>
                             </div>
 
@@ -366,10 +368,10 @@
                     <p class="text-center reach">Here are my social media handles you can reach to </p>
                     <br>
                     <div class="socials">
+                        <a href="https://twitter.com/EfeEseme?t=RK4qhLa-mMJ5ZgJz0qJ3aQ&s=09https://pbs.twimg.com/profile_images/1688779652385382400/expWX2p1.jpg" class="btn btn-dark ">
+                            <i class="bi bi-twitter-x" style="font-size: larger;"></i></a>
                         <a href="http://wa.me/2348143451709" class="btn btn-success ">
                             <i class="bi bi-whatsapp" style="font-size: larger;"></i></a>
-                        <a href="https://twitter.com/EfeEseme?t=RK4qhLa-mMJ5ZgJz0qJ3aQ&s=09https://pbs.twimg.com/profile_images/1688779652385382400/expWX2p1.jpg" class="btn btn-primary ">
-                            <i class="bi bi-twitter" style="font-size: larger;"></i></a>
                         <a href="https://github.com/Efe-Code1" class="btn btn-dark ">
                             <i class="bi bi-github" style="font-size: larger;"></i></i></a>
                         <a href="https://www.facebook.com/eseme.erifeta?mibextid=ZbWKwL" class="btn btn-primary ">
@@ -379,6 +381,7 @@
             </article>
         </main>
 
+        
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
