@@ -430,7 +430,7 @@ p {
 
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:800px) {
     @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
     body {
