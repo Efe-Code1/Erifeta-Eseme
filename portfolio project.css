@@ -362,7 +362,10 @@ p {
 }
 
 .contact{
+    padding-left: 30px;
+    padding-right: 30px;
     justify-content: center;
+    align-items: center;
 }
 
 .form-control{
@@ -394,7 +397,7 @@ p {
 
 /* SOCIAL MEDIA */
 .Socials{
-    border-top: 2px solid #808080;
+    border-top: 1px solid #808080;
     background-color: azure;
     color: black;
     padding-top: 30px;
@@ -602,5 +605,6 @@ p {
         display: flex;
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 }
