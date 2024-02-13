@@ -361,13 +361,6 @@ p {
     padding-bottom: 30px;
 }
 
-.contact{
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
 .form-control{
     padding: 10px;
 }
@@ -430,6 +423,15 @@ p {
     text-align: center;
 }
 
+
+
+
+@media screen and (max-width:1000px) {
+    .contact{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 
 
 
@@ -599,6 +601,9 @@ p {
         font-size: medium;
     }
 
+    .contact{
+        padding: 0;
+    }
 
     /* SOCIALS */
     .locationEmail{
