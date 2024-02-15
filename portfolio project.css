@@ -302,7 +302,7 @@ p {
     height:300px;
     width: 100%;
     background-size: cover;
-   }
+}
 
 .img-text-wrapper{
     position: absolute;
@@ -311,13 +311,18 @@ p {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
     text-align: center;
-    padding-left: 200px;
+    transition: transform 450ms;
+}
+
+.img-text-wrapper:hover{
+    transform: scale(1.1);
 }
 
 .img-text-wrapper:hover .subtitle a{
     text-decoration: underline;
-    text-align: center;
+    text-transform: uppercase;
     color: white;
     font-size: medium;
     font-weight: bold;
@@ -557,9 +562,6 @@ p {
         gap: 50px;
     }
 
-    .img-text-wrapper{
-        margin-left: -100px;
-    }
 
     .img-text-wrapper:hover .subtitle a{
         text-decoration: underline;

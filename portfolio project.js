@@ -1,20 +1,3 @@
-// function sendEmail(){
-//     Email.send({
-//     // secureToken: "294f33dd-2675-48c7-bd74-88e930c78732",
-//     Host : "smtp.gmail.com",
-//     Username : "efezzy321@gmail.com",
-//     Password : '712203639',
-//     To : 'efezzy321@gmail.com',
-//     From : document.getElementById("email").value,
-//     Subject : "Message Alert from my portfolio",
-//     Body : "Name: " + document.getElementById("name").value
-//             + "<br> Email: " + document.getElementById("email").value
-//             + "<br> Message: " + document.getElementById("subject").value
-//     }).then(
-//       message => alert("Message Sent Successfully!")
-//     );
-// }
-
 const pfts = document.querySelectorAll(".portfolio-item-wrapper")
 
 pfts.forEach(pft => {
