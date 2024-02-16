@@ -321,17 +321,19 @@ p {
 }
 
 .img-text-wrapper:hover .subtitle a{
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: white;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: black;
     font-size: medium;
     font-weight: bold;
     zoom:90%;
-}
-
-.img-text-wrapper:hover .subtitle a .internet{
-    color: dodgerblue;
-    font-size: x-large;
+    width: 100%; 
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .img-text-wrapper .subtitle a{
@@ -564,8 +566,8 @@ p {
 
 
     .img-text-wrapper:hover .subtitle a{
-        text-decoration: underline;
-        color: white;
+        text-decoration: none;
+        color: black;
         font-size: medium;
         font-weight: bold;
         zoom:90%;
