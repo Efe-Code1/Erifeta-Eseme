@@ -19,18 +19,18 @@ body {
     background-image: linear-gradient(to bottom, white, transparent);
 }
 
-
 .section1 {
     margin-top: -30px;
     color: azure;
     background-attachment: fixed;
     text-align: center;
+    transition: transform 450ms
 }
 
 
 .section1 a:hover,
 .section2 a:hover {
-    zoom: 110%;
+    transform: scale(1.1);
 }
 
 
