@@ -63,14 +63,35 @@ body {
     font-size: smaller;
 }
 
+.glitch{
+    display: inline-block;
+    font-size: 1.8rem; 
+    color: deepskyblue;
+    text-shadow: 2px 2px black;
+    line-height: 20px; 
+    text-transform: capitalize;
+    font-family: 'Titillium Web', sans-serif;
+    animation: glitch 1s infinite;
+}
+
 #pop-up {
     animation: drop 2s ease forwards;
+}
+
+@keyframes glitch{
+    0%{transform: translate(0);}
+    25%{transform: translate(-5px, 5px);}
+    50%{transform: translate(5px, -5px);}
+    75%{transform: translate(-5px, 5px);}
+    100%{transform: translate(0);}
 }
 
 @keyframes drop {
     from {transform: translateY(-300px);}
     to {transform: translateY(50px);}
 }
+
+
 
 .span a {
     margin-top: 0px;
