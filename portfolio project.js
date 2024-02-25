@@ -1,3 +1,11 @@
+// let navbarButton = document.getElementsByClassName('nav-link text-dark fw-bold')
+
+// navbarButton.addEventListener('click', () => {
+//     navbarButton.classList.add('removeButton')
+// })
+
+
+
 const pfts = document.querySelectorAll(".portfolio-item-wrapper")
 
 pfts.forEach(pft => {

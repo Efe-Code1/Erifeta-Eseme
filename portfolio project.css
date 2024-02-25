@@ -103,6 +103,11 @@ body {
     text-decoration: none;
 }
 
+/* .removeButton {
+    display: none;
+    width: 100%;
+} */
+
 
 
 
@@ -347,8 +352,7 @@ p {
     color: black;
     font-size: medium;
     font-weight: bold;
-    zoom:90%;
-    width: 100%; 
+    /* zoom:90%; */
     text-decoration: none;
     background-color: deepskyblue;
     color: black;
@@ -418,9 +422,6 @@ p {
 
 /* SOCIAL MEDIA */
 .Socials{
-    border-top: 1px solid #808080;
-    background-color: azure;
-    color: black;
     padding-top: 30px;
 }
 
@@ -429,19 +430,19 @@ p {
     justify-content: space-evenly;
     padding: 20px;
     text-decoration: none;
-    background-color: dodgerblue;
-    background-image: linear-gradient(to bottom, white, transparent);
     border-radius: 10px;
 }
 
+.socials a{
+    transition: transform 450ms;
+}
+
 .socials a:hover{
-    box-shadow:  2px 2px 4px dodgerblue,
-                -2px -2px 4px dodgerblue;
-    zoom: 100%;
+    transform: scale(1.1);
 }
 
 .reach{
-    font-size: larger;
+    font-size: large;
     color: black;
 }
 
