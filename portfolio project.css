@@ -6,7 +6,6 @@ body {
     background-image: url(images/InShot_20240301_103949885.jpg);
     background-size: cover;
     background-position: top;
-    background-repeat: repeat-x;
     background-attachment: fixed;
     color: black;
 }
@@ -454,6 +453,11 @@ p {
 
 
 @media screen and (max-width:1000px) {
+    body {
+        background-size: cover;
+    }
+
+
     .contact{
         padding-left: 30px;
         padding-right: 30px;
