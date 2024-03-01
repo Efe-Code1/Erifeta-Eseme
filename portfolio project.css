@@ -3,9 +3,10 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(images/wallpaperflare.com_wallpaper\ \(1\)\ \(15\)_1.jpg);
+    background-image: url(images/InShot_20240301_103949885.jpg);
     background-size: cover;
     background-position: top;
+    background-repeat: repeat-x;
     background-attachment: fixed;
     color: black;
 }
@@ -20,6 +21,7 @@ body {
 }
 
 .section1 {
+    font-family: 'Titillium Web', sans-serif;
     color: black;
     font-weight: bold;
     margin-top: -30px;
@@ -55,7 +57,6 @@ body {
 
 .name {
     font-size: 45px;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 .description {
@@ -69,7 +70,6 @@ body {
     text-shadow: 2px 2px black;
     line-height: 20px; 
     text-transform: capitalize;
-    font-family: 'Titillium Web', sans-serif;
     animation: glitch 1s infinite;
 }
 
@@ -466,9 +466,11 @@ p {
     @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
     body {
-        font-family: 'Montserrat', sans-serif;
         background-color: lightblue;
         color: black;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 
 
@@ -486,7 +488,6 @@ p {
 
     .name {
         font-size: 35px;
-        font-family: 'Titillium Web', sans-serif;
     }
 
     .large{
