@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+    body {
+        background-color: lightblue;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .CONTAINER {
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .reciever{
+        float: left;
+    }
+
+    .sender{
+        float: right;
+    }
+
+    .glitch {
+        color: #058105;
+        display: inline-block;
+        font-size: 1.8rem;
+        line-height: 20px;
+        animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch{
+    0%{transform: translate(0);}
+    25%{transform: translate(-5px, 5px);}
+    50%{transform: translate(5px, -5px);}
+    75%{transform: translate(-5px, 5px);}
+    100%{transform: translate(0);}
+}
+</style>
+
+<body>
+
+
+    <div class="notification display-6 text-center mt-4 fw-bold">
+        Notification Alert
+        <br>
+        <i class="fa fa-envelope-open mt-2 glitch"></i>
+    </div>
+    <br>
+    <div class="CONTAINER pb-4" data-aos="zoom-in">
+        <div class="container text-center lead">
+            <div class="row justify-content-center align-items-center mt-3">
+                <div class="col-lg-8 col-sm-12">
+                    Hi there, you've a got a new message notification!
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="reciever">
+                <div class="">
+                    *******************
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="sender">
+                <div class="">
+                    *******************
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+    </script>
+</body>
+
+</html>

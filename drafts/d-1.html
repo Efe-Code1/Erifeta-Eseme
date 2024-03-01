@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Backgrounds</title>
+    <style>
+        body * {
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+
+        svg {
+            display: block;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            background-color: #234;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
+            position: absolute;
+            right: 25%;
+            top: 50%;
+            transform: translateX(50%);
+            letter-spacing: 0.5em;
+            color: #fff;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateX(50%);
+            letter-spacing: 0.5em;
+            color: black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Welcome</h1>
+        <h2>Hello </h2>
+        <svg viewBox="0 0 100 40">
+            <path d="M 0 40 V 20 Q 25 0, 50 20 Q 75 40, 100 20 V 40" fill="#fff">
+            </path>
+        </svg>
+    </section>
+
+    <!-- M 0 40 V 20 Q 25 0, 50 20 Q 75 40, 100 20 V 40 -->
+
+    <script>
+        let svg = document.getElementsByTagName('svg')[0]
+        console.log(window.getComputedStyle(svg).getPropertyValue('display'))
+    </script>
+</body>
+
+</html>

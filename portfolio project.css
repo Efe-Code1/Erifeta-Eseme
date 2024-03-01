@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(images/Just\ Me.jpg);
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(1\)\ \(15\)_1.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -20,11 +20,11 @@ body {
 }
 
 .section1 {
+    color: black;
+    font-weight: bold;
     margin-top: -30px;
-    color: azure;
     background-attachment: fixed;
     text-align: center;
-    transition: transform 450ms
 }
 
 
@@ -59,7 +59,6 @@ body {
 }
 
 .description {
-    color: azure;
     font-size: smaller;
 }
 
@@ -107,7 +106,6 @@ body {
     display: none;
     width: 100%;
 } */
-
 
 
 
@@ -173,7 +171,6 @@ body {
     text-align: justify;
 }
 
-
 .myResume{
     text-align: center;
     padding: 20px;
@@ -189,8 +186,8 @@ body {
 }
 
 .myResume a:hover{
-    background-color: deepskyblue;
-    zoom:100%
+    background-color: deepskyblue; 
+    zoom:100%;
 }
 
 .achievements{
@@ -218,10 +215,10 @@ body {
 
 .smiley {
     background-color: gold;
+    /* background-clip: text; */
     border-radius: 50%;
     font-size: 20px;
 }
-
 
 
 
@@ -267,6 +264,7 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
 
 div.box {
     padding: 10px;
