@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(images/InShot_20240301_103949885.jpg);
+    background-image: url(images/InShot_20240301_110416855.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -453,11 +453,6 @@ p {
 
 
 @media screen and (max-width:1000px) {
-    body {
-        background-size: cover;
-    }
-
-
     .contact{
         padding-left: 30px;
         padding-right: 30px;
