@@ -3,11 +3,13 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(images/Blur\ Background\ Image.jpg);
+    background-image: url(images/IMG_5039.JPG);
+    backdrop-filter: blur(2px);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
     color: black;
+    position: absolute;
 }
 
 
@@ -63,12 +65,12 @@ body {
     font-size: smaller;
 }
 
-.glitch{
+.glitch {
     display: inline-block;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     color: deepskyblue;
     text-shadow: 2px 2px black;
-    line-height: 20px; 
+    line-height: 20px;
     text-transform: capitalize;
     animation: glitch 1s infinite;
 }
@@ -77,17 +79,36 @@ body {
     animation: drop 2s ease forwards;
 }
 
-@keyframes glitch{
-    0%{transform: translate(0);}
-    25%{transform: translate(-5px, 5px);}
-    50%{transform: translate(5px, -5px);}
-    75%{transform: translate(-5px, 5px);}
-    100%{transform: translate(0);}
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-5px, 5px);
+    }
+
+    50% {
+        transform: translate(5px, -5px);
+    }
+
+    75% {
+        transform: translate(-5px, 5px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
 }
 
 @keyframes drop {
-    from {transform: translateY(-300px);}
-    to {transform: translateY(50px);}
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(50px);
+    }
 }
 
 
@@ -171,12 +192,12 @@ body {
     text-align: justify;
 }
 
-.myResume{
+.myResume {
     text-align: center;
     padding: 20px;
 }
 
-.myResume a{
+.myResume a {
     text-decoration: none;
     border: 2px solid deepskyblue;
     color: black;
@@ -185,14 +206,14 @@ body {
     border-radius: 10px;
 }
 
-.myResume a:hover{
-    background-color: deepskyblue; 
-    zoom:100%;
+.myResume a:hover {
+    background-color: deepskyblue;
+    zoom: 100%;
 }
 
-.achievements{
+.achievements {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     font-size: larger;
 }
 
@@ -204,12 +225,12 @@ body {
     gap: 20px;
 }
 
-.skills img{
+.skills img {
     cursor: pointer;
     width: 100px;
 }
 
-.skills img:hover{
+.skills img:hover {
     zoom: 95%;
 }
 
@@ -252,18 +273,53 @@ body {
     content: "";
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 
 div.box {
@@ -274,15 +330,15 @@ div.box {
     background-color: white;
     margin-right: 10px;
     border-radius: 10px;
-    box-shadow:  3px 3px 4px lightgray,
-                -3px -3px 4px lightgray;
+    box-shadow: 3px 3px 4px lightgray,
+        -3px -3px 4px lightgray;
 }
 
 div.icon {
     width: 100%;
 }
 
-.box p{
+.box p {
     text-align: center;
     padding: 15px;
     line-height: 25px;
@@ -311,26 +367,26 @@ p {
 
 
 /* PROJECT PAGE || SECTION 4   */
-.section4{
+.section4 {
     background-color: aliceblue;
     margin-top: 80px;
     padding-bottom: 100px;
 }
 
-.portfolio-item-wrapper{
+.portfolio-item-wrapper {
     position: relative;
 }
 
-.portfolio-img-background{
+.portfolio-img-background {
     border: 1px solid black;
-    height:300px;
+    height: 300px;
     width: 100%;
     background-size: cover;
 }
 
-.img-text-wrapper{
+.img-text-wrapper {
     position: absolute;
-    top:0px;
+    top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,11 +396,11 @@ p {
     transition: transform 450ms;
 }
 
-.img-text-wrapper:hover{
+.img-text-wrapper:hover {
     transform: scale(1.1);
 }
 
-.img-text-wrapper:hover .subtitle a{
+.img-text-wrapper:hover .subtitle a {
     text-decoration: none;
     /* text-transform: uppercase; */
     color: black;
@@ -359,19 +415,19 @@ p {
     border-radius: 10px;
 }
 
-.img-text-wrapper .subtitle a{
-    color:transparent;
+.img-text-wrapper .subtitle a {
+    color: transparent;
 }
 
-.img-text-wrapper .subtitle a .internet{
-    color:transparent;
+.img-text-wrapper .subtitle a .internet {
+    color: transparent;
 }
 
-.img-fade{
-    filter:brightness(10%);
+.img-fade {
+    filter: brightness(10%);
 }
 
-.project-work{
+.project-work {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 50px;
@@ -385,23 +441,23 @@ p {
 
 
 /* CONTACT PAGE || SECTION 5 */
-.section5{
+.section5 {
     background-color: aliceblue;
     margin-top: 80px;
     padding-bottom: 30px;
 }
 
-.form-control{
+.form-control {
     padding: 10px;
 }
 
-.touch{
+.touch {
     font-size: larger;
 }
 
 
-.submit{
-    width: 100%; 
+.submit {
+    width: 100%;
     padding: 10px;
     text-decoration: none;
     border: 2px solid deepskyblue;
@@ -412,18 +468,18 @@ p {
     border-radius: 10px;
 }
 
-.submit:hover{
+.submit:hover {
     background-color: deepskyblue;
-    zoom:100%
+    zoom: 100%
 }
 
 
 /* SOCIAL MEDIA */
-.Socials{
+.Socials {
     padding-top: 30px;
 }
 
-.socials{
+.socials {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
@@ -431,20 +487,20 @@ p {
     border-radius: 10px;
 }
 
-.socials a{
+.socials a {
     transition: transform 450ms;
 }
 
-.socials a:hover{
+.socials a:hover {
     transform: scale(1.1);
 }
 
-.reach{
+.reach {
     font-size: large;
     color: black;
 }
 
-.locationEmail{
+.locationEmail {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -454,7 +510,7 @@ p {
 
 
 @media screen and (max-width:1000px) {
-    .contact{
+    .contact {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -490,7 +546,7 @@ p {
         font-size: 35px;
     }
 
-    .large{
+    .large {
         font-size: larger;
     }
 
@@ -512,7 +568,7 @@ p {
         padding: 10px;
     }
 
-    .write-up2 p{
+    .write-up2 p {
         font-size: 14px;
     }
 
@@ -520,37 +576,37 @@ p {
         width: 100%;
         padding: 10px;
     }
-    
-    .achievements{
+
+    .achievements {
         display: inline-block;
         font-size: larger;
     }
-    
-    .achievements div{
-        font-size: 17px ;
+
+    .achievements div {
+        font-size: 17px;
     }
 
     .skills {
         margin: 0;
     }
 
-    .skillsets{
+    .skillsets {
         margin-left: 20px;
         margin-bottom: 30px;
     }
 
-    .skills img:hover{
+    .skills img:hover {
         zoom: 150%;
     }
 
-    
+
     .flex {
         flex-direction: column;
         text-align: justify;
         gap: 50px;
     }
 
-    .parent{
+    .parent {
         margin-left: 130px;
     }
 
@@ -571,14 +627,14 @@ p {
         text-align: center;
     }
 
-    .box p{
+    .box p {
         font-size: 14px;
     }
 
 
 
-    /* PROJECT PAGE || SECTION 4   */ 
-    .project-work{
+    /* PROJECT PAGE || SECTION 4   */
+    .project-work {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
@@ -586,21 +642,21 @@ p {
     }
 
 
-    .img-text-wrapper:hover .subtitle a{
+    .img-text-wrapper:hover .subtitle a {
         text-decoration: none;
         color: black;
         font-size: medium;
         font-weight: bold;
-        zoom:90%;
+        zoom: 90%;
     }
 
-    .portfolio-img-background{
+    .portfolio-img-background {
         width: 100%;
         background-size: cover;
         background-position: center;
     }
 
-    .todo{
+    .todo {
         width: 100%;
         background-size: contain;
         background-position: center;
@@ -609,29 +665,29 @@ p {
 
 
 
-    /* CONTACT PAGE || SECTION 5 */ 
-    .form-label{
+    /* CONTACT PAGE || SECTION 5 */
+    .form-label {
         font-size: medium;
     }
 
-    .contact{
+    .contact {
         margin: 0 auto;
     }
 
-    .touch{
-        font-size: medium;
-    }
-    
-    .reach{
+    .touch {
         font-size: medium;
     }
 
-    .contact{
+    .reach {
+        font-size: medium;
+    }
+
+    .contact {
         padding: 0;
     }
 
     /* SOCIALS */
-    .locationEmail{
+    .locationEmail {
         display: flex;
         flex-direction: column;
         text-align: center;
