@@ -3,13 +3,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(images/IMG_5039.JPG);
-    backdrop-filter: blur(2px);
-    background-size: cover;
-    background-position: top;
+    background-image: url(images/IMG_5040.JPG);
+    background-size: auto;
+    background-position: bottom;
     background-attachment: fixed;
     color: black;
-    position: absolute;
 }
 
 
