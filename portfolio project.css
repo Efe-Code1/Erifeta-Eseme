@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -14,7 +14,6 @@ body {
 
 
 
-
 /* HOME HEADING || SECTION 1*/
 .navbar-expand-md {
     background-color: deepskyblue;
@@ -22,10 +21,9 @@ body {
 }
 
 .section1 {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'jost', sans-serif;
     color: white;
     font-weight: bold;
-    margin-top: -30px;
     background-attachment: fixed;
     text-align: center;
 }
@@ -42,8 +40,7 @@ body {
     text-shadow: 2px 2px black;
     font-weight: bold;
     padding: 30px 36px;
-    text-decoration: none;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
 }
 
 
@@ -61,54 +58,42 @@ body {
 }
 
 .description {
+    font-weight: lighter;
     color: white;
     font-size: smaller;
 }
 
-.glitch {
+.glitch{
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.4rem; 
     color: deepskyblue;
     text-shadow: 2px 2px black;
-    line-height: 20px;
+    line-height: 20px; 
     text-transform: capitalize;
     animation: glitch 1s infinite;
 }
 
 #pop-up {
-    animation: drop 2s ease forwards;
+    animation: drop 2s ease-out forwards;
 }
 
-@keyframes glitch {
-    0% {
-        transform: translate(0);
-    }
+.large{
+    color: white;
+    font-weight: lighter;
+    font-size: larger;
+}
 
-    25% {
-        transform: translate(-5px, 5px);
-    }
-
-    50% {
-        transform: translate(5px, -5px);
-    }
-
-    75% {
-        transform: translate(-5px, 5px);
-    }
-
-    100% {
-        transform: translate(0);
-    }
+@keyframes glitch{
+    0%{transform: translate(0);}
+    25%{transform: translate(-5px, 5px);}
+    50%{transform: translate(5px, -5px);}
+    75%{transform: translate(-5px, 5px);}
+    100%{transform: translate(0);}
 }
 
 @keyframes drop {
-    from {
-        transform: translateY(-300px);
-    }
-
-    to {
-        transform: translateY(50px);
-    }
+    from {transform: translateY(-300px);}
+    to {transform: translateY(50px);}
 }
 
 
@@ -123,64 +108,48 @@ body {
     text-decoration: none;
 }
 
-/* .removeButton {
-    display: none;
-    width: 100%;
-} */
-
 
 
 
 /* ABOUT PAGE || SECTION 2 */
 .section2 {
     background-color: #e0f1fc;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-.parent {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-left: 300px;
-    z-index: -1;
-    background-color: #e0f1fc;
-    /* overflow: visible; */
-    transform-style: preserve-3d;
+.separate {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.child:nth-child(1) {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: lightblue;
-    transform: translateZ(100px);
-}
-
-.child:nth-child(2) {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    z-index: -1;
-    background-color: lightblue;
-    transform: translateZ(-100px);
+.skillPadding {
+    margin-right: 50px;
 }
 
 .write-up {
+    margin-top: -30px;
     position: relative;
     display: flex;
     justify-content: center;
 }
 
 .write-up2 {
-    width: 800px;
+    max-width: 1200px;
     padding: 50px;
 }
 
-.write-up2 img {
+.sideline{
+    max-width: 1200px;
+}
+
+.myPic{
+    height: 550px;
     width: 100%;
+}
+
+.write-up2 img {
+    width: 80%;
 }
 
 .write-up2 p {
@@ -192,12 +161,12 @@ body {
     text-align: justify;
 }
 
-.myResume {
+.myResume{
     text-align: center;
     padding: 20px;
 }
 
-.myResume a {
+.myResume a{
     text-decoration: none;
     border: 2px solid deepskyblue;
     color: black;
@@ -206,17 +175,10 @@ body {
     border-radius: 10px;
 }
 
-.myResume a:hover {
-    background-color: deepskyblue;
-    zoom: 100%;
+.myResume a:hover{
+    background-color: deepskyblue; 
+    zoom:100%;
 }
-
-.achievements {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: larger;
-}
-
 
 .skills {
     display: grid;
@@ -225,13 +187,23 @@ body {
     gap: 20px;
 }
 
-.skills img {
+
+.skills img{
     cursor: pointer;
-    width: 100px;
+    width: 80px;
 }
 
-.skills img:hover {
+.skills img:hover{
     zoom: 95%;
+}
+
+.Accomplishments{
+    margin-left: 60px;
+    text-align: center;
+}
+
+.move{
+    margin-left: 60px;
 }
 
 .smiley {
@@ -273,72 +245,41 @@ body {
     content: "";
 }
 
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 
 div.box {
     padding: 10px;
     text-align: center;
     margin: 20px;
-    border: 1px solid lightblue;
     background-color: white;
     margin-right: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 4px lightgray,
-        -3px -3px 4px lightgray;
+    box-shadow:  3px 3px 4px lightgray,
+                -3px -3px 4px lightgray;
+}
+
+div.box:hover {
+    box-shadow:  2px 2px 4px black,
+                -2px -2px 4px black;
 }
 
 div.icon {
     width: 100%;
 }
 
-.box p {
+.box p{
     text-align: center;
     padding: 15px;
     line-height: 25px;
@@ -367,26 +308,26 @@ p {
 
 
 /* PROJECT PAGE || SECTION 4   */
-.section4 {
+.section4{
     background-color: aliceblue;
     margin-top: 80px;
     padding-bottom: 100px;
 }
 
-.portfolio-item-wrapper {
+.portfolio-item-wrapper{
     position: relative;
 }
 
-.portfolio-img-background {
+.portfolio-img-background{
     border: 1px solid black;
-    height: 300px;
+    height:300px;
     width: 100%;
     background-size: cover;
 }
 
-.img-text-wrapper {
+.img-text-wrapper{
     position: absolute;
-    top: 0px;
+    top:0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,11 +337,11 @@ p {
     transition: transform 450ms;
 }
 
-.img-text-wrapper:hover {
+.img-text-wrapper:hover{
     transform: scale(1.1);
 }
 
-.img-text-wrapper:hover .subtitle a {
+.img-text-wrapper:hover .subtitle a{
     text-decoration: none;
     /* text-transform: uppercase; */
     color: black;
@@ -415,19 +356,19 @@ p {
     border-radius: 10px;
 }
 
-.img-text-wrapper .subtitle a {
-    color: transparent;
+.img-text-wrapper .subtitle a{
+    color:transparent;
 }
 
-.img-text-wrapper .subtitle a .internet {
-    color: transparent;
+.img-text-wrapper .subtitle a .internet{
+    color:transparent;
 }
 
-.img-fade {
-    filter: brightness(10%);
+.img-fade{
+    filter:brightness(10%);
 }
 
-.project-work {
+.project-work{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 50px;
@@ -441,23 +382,23 @@ p {
 
 
 /* CONTACT PAGE || SECTION 5 */
-.section5 {
+.section5{
     background-color: aliceblue;
     margin-top: 80px;
     padding-bottom: 30px;
 }
 
-.form-control {
+.form-control{
     padding: 10px;
 }
 
-.touch {
+.touch{
     font-size: larger;
 }
 
 
-.submit {
-    width: 100%;
+.submit{
+    width: 100%; 
     padding: 10px;
     text-decoration: none;
     border: 2px solid deepskyblue;
@@ -468,18 +409,18 @@ p {
     border-radius: 10px;
 }
 
-.submit:hover {
+.submit:hover{
     background-color: deepskyblue;
-    zoom: 100%
+    zoom:100%
 }
 
 
 /* SOCIAL MEDIA */
-.Socials {
+.Socials{
     padding-top: 30px;
 }
 
-.socials {
+.socials{
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
@@ -487,20 +428,20 @@ p {
     border-radius: 10px;
 }
 
-.socials a {
+.socials a{
     transition: transform 450ms;
 }
 
-.socials a:hover {
+.socials a:hover{
     transform: scale(1.1);
 }
 
-.reach {
+.reach{
     font-size: large;
     color: black;
 }
 
-.locationEmail {
+.locationEmail{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -510,7 +451,7 @@ p {
 
 
 @media screen and (max-width:1000px) {
-    .contact {
+    .contact{
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -518,7 +459,7 @@ p {
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
     @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
     body {
@@ -537,6 +478,11 @@ p {
         gap: 10px;
     }
 
+    .section1 a:hover,
+    .section2 a:hover {
+        transform: scale(1.05);
+    }
+
     .welcome {
         margin-top: 20px;
         margin-left: 20px;
@@ -546,7 +492,9 @@ p {
         font-size: 35px;
     }
 
-    .large {
+    .large{
+        color: white;
+        font-weight: lighter;
         font-size: larger;
     }
 
@@ -565,48 +513,60 @@ p {
 
     .write-up2 {
         width: 430px;
-        padding: 10px;
+        padding: 20px;
     }
 
-    .write-up2 p {
+    .write-up2 p{
         font-size: 14px;
     }
 
     .write-up2 img {
-        width: 100%;
+        width: 80%;
         padding: 10px;
     }
-
-    .achievements {
-        display: inline-block;
-        font-size: larger;
+    
+    .myPic{
+        width: 100%;
+        height: auto;
     }
 
-    .achievements div {
-        font-size: 17px;
+    .separate {
+        flex-direction: column;
     }
 
+    .move{
+        margin-left: 0;
+    }
+    
     .skills {
         margin: 0;
+        gap: 0;
     }
 
-    .skillsets {
+    .skillsets{
         margin-left: 20px;
         margin-bottom: 30px;
     }
 
-    .skills img:hover {
+    .skills img:hover{
         zoom: 150%;
     }
 
-
+    .skillPadding {
+        margin-right: 0;
+    }
+    
     .flex {
         flex-direction: column;
         text-align: justify;
         gap: 50px;
     }
 
-    .parent {
+    .Accomplishments{
+        text-align: left;
+    }
+    
+    .parent{
         margin-left: 130px;
     }
 
@@ -627,14 +587,14 @@ p {
         text-align: center;
     }
 
-    .box p {
+    .box p{
         font-size: 14px;
     }
 
 
 
-    /* PROJECT PAGE || SECTION 4   */
-    .project-work {
+    /* PROJECT PAGE || SECTION 4   */ 
+    .project-work{
         display: flex;
         flex-direction: column;
         margin-left: 20px;
@@ -642,21 +602,21 @@ p {
     }
 
 
-    .img-text-wrapper:hover .subtitle a {
+    .img-text-wrapper:hover .subtitle a{
         text-decoration: none;
         color: black;
         font-size: medium;
         font-weight: bold;
-        zoom: 90%;
+        zoom:90%;
     }
 
-    .portfolio-img-background {
+    .portfolio-img-background{
         width: 100%;
         background-size: cover;
         background-position: center;
     }
 
-    .todo {
+    .todo{
         width: 100%;
         background-size: contain;
         background-position: center;
@@ -665,29 +625,29 @@ p {
 
 
 
-    /* CONTACT PAGE || SECTION 5 */
-    .form-label {
+    /* CONTACT PAGE || SECTION 5 */ 
+    .form-label{
         font-size: medium;
     }
 
-    .contact {
+    .contact{
         margin: 0 auto;
     }
 
-    .touch {
+    .touch{
+        font-size: medium;
+    }
+    
+    .reach{
         font-size: medium;
     }
 
-    .reach {
-        font-size: medium;
-    }
-
-    .contact {
+    .contact{
         padding: 0;
     }
 
     /* SOCIALS */
-    .locationEmail {
+    .locationEmail{
         display: flex;
         flex-direction: column;
         text-align: center;
