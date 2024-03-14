@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -97,11 +98,13 @@ body {
 
 
 .span a {
+    font-family: 'satisfy',  cursive;
+    font-size: 20px;
     margin-top: 0px;
     color: black;
     font-weight: bold;
     background-color: deepskyblue;
-    padding: 6px 40px;
+    padding: 6px 60px;
     border-radius: 20px;
     text-decoration: none;
 }
